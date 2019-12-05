@@ -1,0 +1,33 @@
+extends ./layouts/standard.pug
+block content 
+
+  extends ./layouts/standard.pug
+block content 
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel', style="margin-top:-100px; z-index:30;")
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+      li(data-target='#carouselExampleIndicators', data-slide-to='1')
+      li(data-target='#carouselExampleIndicators', data-slide-to='2')
+      li(data-target='#carouselExampleIndicators', data-slide-to='3')
+      li(data-target='#carouselExampleIndicators', data-slide-to='4')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='/images/carrusel/imagen-1.jpg', alt='Carlos Villegas Studio')
+      .carousel-item
+        img.d-block.w-100(src='/images/carrusel/imagen-2.jpg', alt='Carlos Villegas Studio')
+      .carousel-item
+        img.d-block.w-100(src='/images/carrusel/imagen-3.jpg', alt='Carlos Villegas Studio')
+      .carousel-item
+        img.d-block.w-100(src='/images/carrusel/imagen-4.jpg', alt='Carlos Villegas Studio')
+      .carousel-item
+        img.d-block.w-100(src='/images/carrusel/imagen-5.jpg', alt='Carlos Villegas Studio')
+    a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+
+  .container-fluid
+    .row
+      h1 Hola Mundo!
