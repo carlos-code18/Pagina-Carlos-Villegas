@@ -1,8 +1,174 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+  margin: 0px;
+  padding: 0px;
+
 }
 
-a {
-  color: #00B7FF;
+#fotografo{
+  font-size: 5pt;
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(82, 82, 82);
+}
+
+#acerca{
+  margin-top: 50px;
+  text-align: center;
+}
+
+#historias{
+  margin-top: 50px;
+  text-align: center;
+}
+
+#contentHistorias{
+  margin-top: 10px;
+}
+
+@font-face{
+    font-family: "MelanicBlackSerifDemo-Regular";
+    src: url("../font/MelanicBlackSerifDemo-Regular.ttf");
+}
+
+h1{
+  font-family: "MelanicBlackSerifDemo-Regular";
+}
+
+h2{
+  font-family: "MelanicBlackSerifDemo-Regular";
+}
+
+#tituloHistorias{
+  color: rgb(82, 82, 82);
+}
+
+#momentos{
+  font-size: 12px;
+  letter-spacing: 6px;
+}
+
+/* estilos de imagen hover */
+/* -webkit-filter: blur(4px);filter: blur(4px); */
+
+.imgHistorias:hover{
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+#fraseUno{
+  font-size: 15px;
+}
+
+#fraseUno{
+  font-size: 10;
+}
+
+#principalTxt{
+  font-size: 35px;
+}
+
+#album{
+  font-family: "MelanicBlackSerifDemo-Regular";
+  padding-top: 50px;
+  text-align: center;
+}
+
+#fondoAlbum{
+  background-image: url("../images/album.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 400px;
+  margin-top: 50px;
+}
+
+#albumTittle {
+  font-family: "MelanicBlackSerifDemo-Regular";
+  margin-top: 50px;
+  color: white;
+  letter-spacing: 13px;
+}
+
+#textoAlbum{
+  letter-spacing: 9px;
+}
+
+#hrLine{
+  margin-top: 50px;
+  width: 80%;
+  border: .7px solid black;
+}
+
+#servicios{
+  font-family: "MelanicBlackSerifDemo-Regular";
+  margin-top: 15px;
+  text-align: center;
+}
+
+#fondoContacto{
+  margin-top: 50px;
+  background-image: url(../images/Contacto.jpg);
+  background-position: center;
+  padding-top: 50px;
+  background-size: cover;
+  height: 650px;
+  color: white;
+  font-family: "MelanicBlackSerifDemo-Regular";
+}
+
+#menu{
+  z-index: 400;
+  border-top-style: solid;
+  border-top-color: white;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  height: 40px;
+}
+
+.nav-link{
+  color: white !important;
+  font-family: "MelanicBlackSerifDemo-Regular";
+}
+
+.nav-item{
+  margin-left: 120px;
+}
+
+.contentImg{
+  height: 220px;
+ 
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+.contentImg h1{
+  padding-top: 85px;
+}
+
+.historiaHover:hover{
+ background-color:rgba(0, 0, 0, .4);
+}
+
+.contentFondoCardHistoria{
+  padding: 30px;
+}
+
+.txtMayus{
+  font-size: 30px;
+}
+
+.form-control{
+  background-color: rgba(255, 255, 255, .0);
+  border-top-color: rgba(255, 255, 255, .0);
+  border-left-color: rgba(255, 255, 255, .0);
+  border-right-color: rgba(255, 255, 255, .0);
+  color: white;
+}
+
+textarea{
+  border-color: white !important;
+}
+
+#Formulario{
+  letter-spacing: 6px;
 }

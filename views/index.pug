@@ -3,7 +3,7 @@ block content
 
   extends ./layouts/standard.pug
 block content 
-  #carouselExampleIndicators.carousel.slide(data-ride='carousel', style="margin-top:-100px; z-index:30;")
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel', style="margin-top:-200px; z-index:30;")
     ol.carousel-indicators
       li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
       li(data-target='#carouselExampleIndicators', data-slide-to='1')
@@ -29,5 +29,121 @@ block content
       span.sr-only Next
 
   .container-fluid
-    .row
-      h1 Hola Mundo!
+    .row#fotografo
+      .col 
+        h1#principalTxt [ F O T O G R A F O | D E | B O D A S ]
+        h2#fraseUno “Sentir lo invisible y ser capaz de crearlo, eso es arte.” – Hans Hofmann -
+    .row#acerca
+      .col
+        img(src="/images/IMG_1320.jpg", width="60%", alt="Carlos Villegas Studio")
+      .col
+        img(src="/images/logo-pie.png", width="15%" alt="Carlos Villegas Studio")
+        h1 {  ACERCA DE MI  }
+        p Hola! Soy Carlos Villegas y soy fotógrafo, me especializo en bodas pero tambien hago un poco de todo, la técnica de retrato se ha vuelto parte de mi.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aut ad quibusdam, delectus voluptatem aliquid molestias facilis modi debitis nisi mollitia obcaecati possimus reprehenderit totam quia accusantium iusto eaque aspernatur.
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam quos dolor odit? Ex deserunt quaerat pariatur, officiis vel sapiente nisi quae minima, iste ratione animi voluptates itaque aperiam? Eius, similique.
+    
+    .row#historias
+      .col-md-12.col-xs-12.col-sm-12
+        h1#tituloHistorias {   H I S T O R I A S   }
+        h2#momentos Momentos | que | trascienden | en | el | tiempo
+      .col-md-12.col-xs-12.col-sm-12
+        .row#contentHistorias
+          .col-md-10.offset-md-1
+            .row
+              .col.contentFondoCardHistoria
+                .row.contentImg(style="background-image:url(/images/boda.jpg);")
+                  .col.historiaHover
+                    h1 B O D A
+
+              .col.contentFondoCardHistoria
+                .row.contentImg(style="background-image:url(/images/preboda.jpg);")
+                  .col.historiaHover
+                    h1 P R E B O D A
+                
+              .col.contentFondoCardHistoria
+                .row.contentImg(style="background-image:url(/images/trash.jpg);")
+                  .col.historiaHover
+                    h1 T R A S H
+
+              //- .col.contentImg
+              //-   h1 P R E B O D A
+              //-   img.imgHistorias(src="/images/preboda.jpg", width="80%" alt="Carlos Villegas Studio")
+                
+              //- .col.contentImg
+              //-   h1 T R A S H
+              //-   img.imgHistorias(src="/images/trash.jpg", width="80%" alt="Carlos Villegas Studio")
+
+    .row#album
+      .col-md-12.col-xs-12.col-sm-12#fondoAlbum
+        .row#contentAlbum
+          .col-md-12.col-xs-12.col-sm-12
+            h1#albumTittle EL ALBUM  
+            p#textoAlbum HECHO/CON/MUCHO/AMOR
+    
+    hr#hrLine
+  
+    .row#servicios
+      .col-md-12.col-xs-12.col-sm-12
+        .row
+          .col-md-12.col-xs-12.col-sm-12
+            h1#servicios S E R V I C I O S
+        .row
+          .col-md-4.offset-md-4
+            .row
+              .col
+                img(src="/images/01.png", alt="fotografia", width="50%")
+                p FOTOGRAFIA
+              .col
+                img(src="/images/02.png", alt="video", width="50%")
+                p VIDEO
+              .col
+                img(src="/images/03.png", alt="dron", width="50%")
+                p DRON
+
+    .row#contacto
+      .col-md-12.col-xs-12.col-sm-12#fondoContacto
+        .row
+          .col-md-10.offset-md-1
+            .row
+              .col
+                p 
+                spam.txtMayus S
+                |i has encontrado una conexion con mi trabajo, me encantaria hablar con usted.
+                br
+                p 
+                spam.txtMayus C
+                |ORREO 
+                p CV.INFO.STUDIO@GMAIL.COM
+                p 
+                spam.txtMayus T
+                |ELEFONO
+                P +52 771·100·90·70
+              .col
+                
+              .col#Formulario
+                form(action="")
+                  p(style="text-align:center; letter-spacing: 9px") AGENDEMOS UNA CITA
+                  P(style="text-align:center; font-size: 25px; letter-spacing: 13px; margin-top: -20px") MANDA CORREO
+                  .form-group
+                    label(for="") Nombre
+                    input(type="text", class="form-control")
+                  .form-group
+                    label(for="") Telefono
+                    input(type="text", class="form-control")
+                  .form-group
+                    label(for="") Correo
+                    input(type="text", class="form-control")
+                  .form-group
+                    label(for="") Fecha del Evento
+                    input(type="text", class="form-control")
+                  .form-group
+                    label(for="") Platicame Sobre tu Evento
+                    textarea.form-control(name="", cols="30", rows="2")
+                  .form-group
+                    button.btn.btn-light Enviar
+          
+          
+
+            
+          
